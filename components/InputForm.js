@@ -4,8 +4,7 @@ import {
   Pressable,
   StyleSheet,
   Text,
-  TextInput,
-  View,
+  TextInput
 } from "react-native";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -20,6 +19,7 @@ function InputForm() {
       setCurrentValue("");
     }
   };
+  
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
